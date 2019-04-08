@@ -5,5 +5,5 @@ if [[ "$VERBOSE" == "true" ]]; then
 	tail -f /var/log/php7/*.log &
 fi
 
-chown -R nobody:nobody /var/www
+chown -R www-data: /var/www/ 
 php-fpm7 -F
